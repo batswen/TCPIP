@@ -19,6 +19,9 @@ Sitzungsschicht / Session layer<br/>
 Darstellungsschicht / Presentation layer<br/>
 #### Schicht 7
 Anwendungsschicht / Application layer<br/>
+##### Merksätze
+(Englisch) Please Do Not Throw Salami Pizza Away<br/>
+(Deutsch) Alle Penner sitzen tatsächlich neben der Party
 ### Protokolle
 Name (Langform) [Port]<br/>
 IP (Internet Protocol)<br/>
@@ -27,6 +30,8 @@ UDP (User Datagram Protocol)<br/>
 DNS (Domain Name Service) [53]<br/>
 LDAP (Lightweight Directory Access Protocol) [TCP/UDP]<br/>
 DHCP (Dynamic Host Configuration Protocol) [67 Server/Relay agent, 68 Client]<br/>
+HTTP (HyperText Transfer Protocol) [80]<br/>
+HTTPS (HyperText Transfer Protocol Secure) [443]
 ### IP-Adressen (IPv4)
 IPv4-Adressen bestehen aus vier vorzeichenlosen Bytes, Oktett genannt, getrennt durch je einen Punkt.<br/>
 Beispiel: 192.168.0.1<br/>
@@ -35,14 +40,14 @@ Beispiel: 200.200.200.200
 Die Subnetzmaske unterteilt die IP-Adresse in Netzwerkteil und Hostteil. Der Netzwerkteil wird durch Einsen (links) angezeigt, der Hostteil (rechts) durch Nullen. Nach der ersten Null kann keine Eins mehr vorkommen.</br>
 Beispiel: 255.255.255.0 (Binär: 11111111.11111111.11111111.00000000)<br/>
 Beispiel: 255.255.192.0 (Binär: 11111111.11111111.11000000.00000000)<br/>
-Als Kurzform der Subnetzmaske hat sich der Suffix etabliert, hierbei wird die Anzahl an Einsen angegeben. Der Suffix wird an die IP-Adresse angehängt.<br/>
+Als Kurzform der Subnetzmaske hat sich der Suffix etabliert, hierbei wird lediglich die Anzahl der Einsen angegeben. Der Suffix wird an die IP-Adresse angehängt.<br/>
 Beispiel: 192.168.0.1/24 (für 255.255.255.0)
 Beispiel: 192.168.0.1/20 (für 255.255.240.0)
 Beispiel: 192.168.0.1/16 (für 255.255.0.0)
 #### Gateway
 Ein Gateway ist die Verbindung zwischen zwei Netzwerken.
 #### Netzklassen
-Der verfügbare Adressbereich ist in fünf sog. Netzklassen unterteilt. Die Klassen A, B, C sind zur freien Verwendung gedacht, D ist für Multicasts gedacht und E ist für zukünftige Erweiterung reserviert. Aufgrund des IP-Adressmangels wurde Klasse E freigegeben.
+Der verfügbare 32-Bit-Adressbereich ist in fünf sog. Netzklassen unterteilt. Die Klassen A, B, C sind zur freien Verwendung gedacht, D ist für Multicasts gedacht und E ist für zukünftige Erweiterung reserviert. Aufgrund des IP-Adressmangels wurde Klasse E freigegeben.
 ```
 Netzklasse Präfix Bereich                      Netzmaske
 A           0...     0.0.0.0 - 127.255.255.255  255.0.0.0
