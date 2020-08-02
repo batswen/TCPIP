@@ -35,7 +35,7 @@ HTTPS (HyperText Transfer Protocol Secure) [443]
 ### IP-Adressen (IPv4)
 IPv4-Adressen bestehen aus vier vorzeichenlosen Bytes, Oktett genannt, getrennt durch je einen Punkt.<br/>
 ```
-Beispiel: 192.168.0.1<br/>
+Beispiel: 192.168.0.1
 Beispiel: 200.200.200.200
 ```
 #### Subnetzmaske
