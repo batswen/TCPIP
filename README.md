@@ -22,8 +22,9 @@ Anwendungsschicht / Application layer<br/>
 ##### Merksätze
 (Englisch, 1 bis 7) Please Do Not Throw Salami Pizza Away<br/>
 (Deutsch, 7 bis 1) Alle deutschen Studenten trinken verschiedene Sorten Bier
-### Protokolle
+### BEzeichnungen
 Name (Langform) [Port]<br/>
+MAC (Media-Access-Control)<br/>
 IP (Internet Protocol)<br/>
 TCP (Transport Control Protocol)<br/>
 UDP (User Datagram Protocol)<br/>
