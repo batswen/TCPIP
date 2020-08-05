@@ -34,15 +34,24 @@ DHCP (Dynamic Host Configuration Protocol) [67 Server/Relay agent, 68 Client]<br
 HTTP (HyperText Transfer Protocol) [80]<br/>
 HTTPS (HyperText Transfer Protocol Secure) [443]
 ### IP-Adressen (IPv4)
-IPv4-Adressen bestehen aus vier vorzeichenlosen Bytes, Oktett genannt, getrennt durch je einen Punkt.<br/>
+IPv4-Adressen bestehen aus vier vorzeichenlosen Bytes, Oktett genannt, getrennt durch je einen Punkt.
 ```
 Beispiel: 192.168.0.1
 Beispiel: 200.200.200.200
 ```
 #### Subnetzmaske
-Die Subnetzmaske unterteilt die IP-Adresse in Netzwerkteil und Hostteil. Der Netzwerkteil wird durch Einsen (links) angezeigt, der Hostteil (rechts) durch Nullen. Nach der ersten Null kann keine Eins mehr vorkommen.</br>
-Beispiel: 255.255.255.0 (Binär: 11111111.11111111.11111111.00000000)<br/>
-Beispiel: 255.255.192.0 (Binär: 11111111.11111111.11000000.00000000)<br/>
+Die Subnetzmaske unterteilt die IP-Adresse in Netzwerkteil und Hostteil. Der Netzwerkteil wird durch Einsen (links) angezeigt, der Hostteil (rechts) durch Nullen. Nach der ersten Null kann keine Eins mehr vorkommen.
+```
+Beispiel: 255.255.255.0 (Binär: 11111111.11111111.11111111.00000000)
+Beispiel: 255.255.192.0 (Binär: 11111111.11111111.11000000.00000000)
+
+192.168.0.1     = 11000000.10101000.00000000.00000001
+255.255.255.0   = 11111111.11111111.11111111.00000000
+Netzwerkteil    = 11000000.10101000.00000000.xxxxxxxx (= 192.168.0.x)
+Hostteil        = xxxxxxxx.xxxxxxxx.xxxxxxxx.00000001 (= x.x.x.1)
+
+Wie man sieht sind die ersten drei Byte der IP-Adresse der Netzwerkteil und das letzte Byte ist der Hostteil
+```
 Als Kurzform der Subnetzmaske hat sich der Suffix etabliert, hierbei wird lediglich die Anzahl der Einsen angegeben. Der Suffix wird an die IP-Adresse angehängt.<br/>
 ```
 Beispiel: 192.168.0.1/24 (für 255.255.255.0)
@@ -60,6 +69,13 @@ Netzklasse Präfix Bereich                      Netzmaske
  C          110.   192.0.0.0 - 223.255.255.255  255.255.255.0
  D          1110   224.0.0.0 - 239.255.255.255
  E          1111   240.0.0.0 - 255.255.255.255
+
+Hier enthalten sind drei private Netzwerke:
+ A 10.0.0.0/8  1 privates 8-Bit-Netzwerk
+ B 172.16.0.0/12 16 private 16-Bit-Netzwerke
+ C 192.168.0.0/16 256 private 24-Bit-Netzwerke
+sowie das Loopback-Interface:
+ A 127.0.0.0/8
 ```
 #### Subnetze
 Über die Subnetzmaske kann ein Netzwerk in mehrere, von einander unabhängige Netzwerke unterteilt werden.
