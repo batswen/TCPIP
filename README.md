@@ -61,7 +61,7 @@ Beispiel: 192.168.0.1/16 (für 255.255.0.0)
 #### Gateway
 Ein Gateway ist die Verbindung zwischen zwei Netzwerken.
 #### Netzklassen
-Der verfügbare 32-Bit-Adressbereich ist in fünf sog. Netzklassen unterteilt. Die Klassen A, B, C sind zur freien Verwendung gedacht, D ist für Multicasts gedacht und E ist für zukünftige Erweiterung reserviert. Aufgrund des IP-Adressmangels wurde Klasse E freigegeben.
+Der verfügbare 32-Bit-Adressbereich ist in fünf sog. Netzklassen unterteilt. Die Klassen A, B, C sind zur freien Verwendung gedacht, D ist für Multicasts gedacht und E ist für zukünftige Erweiterung reserviert.
 ```
 Netzklasse Präfix Bereich                      Netzmaske
  A          0...     0.0.0.0 - 127.255.255.255  255.0.0.0
@@ -71,10 +71,10 @@ Netzklasse Präfix Bereich                      Netzmaske
  E          1111   240.0.0.0 - 255.255.255.255
 
 Hier enthalten sind drei private Netzwerke:
- A 10.0.0.0/8  1 privates 8-Bit-Netzwerk
- B 172.16.0.0/12 16 private 16-Bit-Netzwerke
+ A 10.0.0.0/8       1 privates 8-Bit-Netzwerk
+ B 172.16.0.0/12   16 private 16-Bit-Netzwerke
  C 192.168.0.0/16 256 private 24-Bit-Netzwerke
-sowie das Loopback-Interface:
+sowie das Loopback-Interface, auch "localhost" genannt:
  A 127.0.0.0/8
 ```
 #### Subnetze
