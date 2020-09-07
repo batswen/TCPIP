@@ -52,7 +52,7 @@ Hostteil        = xxxxxxxx.xxxxxxxx.xxxxxxxx.00000001 (= x.x.x.1)
 
 Wie man sieht sind die ersten drei Byte der IP-Adresse der Netzwerkteil und das letzte Byte ist der Hostteil
 ```
-Als Kurzform der Subnetzmaske hat sich der Suffix etabliert, hierbei wird lediglich die Anzahl der Einsen angegeben. Der Suffix wird an die IP-Adresse angehängt.<br/>
+Als Kurzform der Subnetzmaske hat sich der Suffix etabliert, hierbei wird lediglich die Anzahl der Einsen angegeben. Der Suffix wird an die IP-Adresse angehängt.
 ```
 Beispiel: 192.168.0.1/24 (für 255.255.255.0)
 Beispiel: 192.168.0.1/20 (für 255.255.240.0)
