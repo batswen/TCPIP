@@ -79,4 +79,26 @@ sowie das Loopback-Interface, auch "localhost" genannt:
 ```
 #### Subnetze
 Über die Subnetzmaske kann ein Netzwerk in mehrere, von einander unabhängige Netzwerke unterteilt werden.
+
+#### APIPA = Automatic Private IP Addressing
+Wenn ein Client auf DHCP konfiguriert ist, aber der DHCP-Server nicht erreicht werden kann, wählt sich der Client eine IP-Adresse aus dem Netzwerk 169.254.0.0/16.
+
 ### IP-Adressen (IPv6)
+IPv6-Adressen haben eine Länge von 128 Bit. Sie sind in 8 Blöcke zu je sechzehn Bit unterteilt. Die einzelnen Blöcke (Hextette) werden durch ein Doppelpunkt getrennt. Anstatt einer Subnetzmaske wird hier immer die Kurzform (bei IPv4: Suffix, bei IPv6: Präfix) genutzt.
+
+```
+2000:0AF2:0001:00A0:0E80:0000:1000:00EF/64
+```
+
+Führende Nullen können entfallen. Eine Folge von Nullen (0000) kann durch zwei Doppelpunkte ersetzt werden.
+
+```
+Die IPv6-Adresse
+2000:0000:0000:0000:0002:0000:0000:0000
+kann wie folgt dargestellt werden:
+entweder: 2000::2:0:0:0
+oder:     2000:0:0:0:2::
+
+   2000:0AF2:0001:00A0:0E80:0000:1000:00EF
+-> 2000:AF2:1:A0:E80:0:1000:EF
+```
